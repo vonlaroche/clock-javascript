@@ -13,16 +13,13 @@ getMinutes = () => {
     let dateObj = new Date();
     let minutes = dateObj.getMinutes();
     let positionDeg = minutes * (360 / 60) + 90;
-    console.log(minutes);
     return positionDeg;
 }
 
 getHours = () => {
     let dateObj = new Date();
     let hours = dateObj.getHours();
-    let minutes = dateObj.getMinutes();
     let positionDeg = hours * (360 / 12)+ 90;
-    console.log(hours);
     return positionDeg;
 }
 
